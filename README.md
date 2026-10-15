@@ -11,6 +11,7 @@ npm run build      # type-check + production build into dist/
 npm run preview    # serve the production build locally
 npm run assets     # re-render the UGC sample videos (dev server must be running)
 npm run og         # re-render public/og-image.png (dev server must be running)
+npm run icons      # re-render the favicon set from scripts/render-icons.mjs
 ```
 
 ## Pages
@@ -46,6 +47,7 @@ Everything a visitor reads lives in `src/content/`. Nothing below is real yet.
 | Services, process, highlights, budgets | `src/content/studio.ts` | Highlights are written as approach statements, not claims — edit to describe your studio. |
 | Testimonials | `src/content/studio.ts` → `testimonials` | Leave empty until you have verified quotes; a neutral "working together" section shows instead. |
 | Social card | `scripts/og-card.html` → `npm run og` | Re-render after changing the name or headline. |
+| Favicon & app icons | `scripts/render-icons.mjs` → `npm run icons` | Ball-and-trail mark in ink/lime. Writes `favicon.svg`, `favicon.ico`, `apple-touch-icon.png` and the Android/PWA icons in `public/`; names in `public/site.webmanifest`. |
 
 ## Video assets
 
